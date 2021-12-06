@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Binary_to_decimal {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the length of the binary holding array");
+		int b = sc.nextInt();
+		int decimal = 0;
+		int binary[] = new int[b];
+		for (int i=0; i<=b-1; i++) {
+			System.out.println("Enter binary in position "+i);
+			binary[i] = sc.nextInt();
+		}
+		
+		for (int i=0; i<=b-1; i++) {
+			System.out.print(binary[i]+" ");
+		}
+		int j=4;
+		for(int i=0; i<=binary.length; i++) {
+			decimal = decimal+binary[i]*2^j;
+			j--;
+		}
+		System.out.println("The decimal value is "+decimal);
+	}
+}
