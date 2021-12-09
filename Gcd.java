@@ -6,14 +6,10 @@ public class Gcd {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the two numbers: ");
-		int num1 = sc.nextInt();
-		int num2 = sc.nextInt();
-		while(num2!=0 ) {
-			int num3;
-			num3=num1%num2;
-			num1=num2;
-			num2 = num3;
-		}
-		System.out.println("The GCD of the two numbers is: " +num1);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		Gcdfind res = new Gcdfind();
+		int ans = res.gcdfinder(a, b);
+		System.out.println("The GCD of the two numbers "+a+" and "+b+" is: " +ans);
 	}
-}
+}	
