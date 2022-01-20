@@ -15,7 +15,7 @@ public class SortArray {
 		//sorting using bubble sort
 		for(int i=0; i<=size-1; i++) {
 			for(int j=i+1; j<=size-1; j++) {
-				if(a[j]<a[i]) {
+				if(a[j]<a[i]) { //change sign from < to > to make it sort in descending order
 					int temp = a[j];
 					a[j] = a[i];
 					a[i] = temp;
