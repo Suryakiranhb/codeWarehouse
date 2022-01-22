@@ -66,5 +66,6 @@ public class CorrespondingSum {
 		for(int i=0; i<=bigger-1; i++) {
 			System.out.print(c[i]+" ");
 		}
+		sc.close();
 	}
 }
