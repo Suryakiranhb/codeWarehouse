@@ -33,7 +33,7 @@ public class Duplicate {
 				System.out.println("Invalid array size");
 			} 
 			else if (pos > size - 1) {
-				System.out.println("Position is greater than the size of an array");
+				System.out.println("Position is greater than the size of the array");
 			}
 		}
 	}
