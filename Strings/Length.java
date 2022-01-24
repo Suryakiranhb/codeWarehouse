@@ -8,16 +8,6 @@ public class Length {
 		System.out.println("Enter your name");
 		String name = sc.nextLine();
 		char[] a = new char[name.length()];
-//		int count = 0;
-//		for(int i=0; i<=name.length()-1; i++) {
-//			if(a[i] == '\s') {
-//				count++;
-//			}
-//		}
-//		for(int i=0; i<=name.length()-1; i++) {
-//			System.out.print(a[i]+" ,");
-//		}
-//		System.out.println(count);
 		if(name.matches("[A-Za-z ]+")) {
 			int length = name.length();
 			System.out.println(name+" has "+(length)+ " characters");
@@ -25,6 +15,6 @@ public class Length {
 		else {
 			System.out.println("Invalid input");
 		}
-		
+		sc.close();
 	}
 }
