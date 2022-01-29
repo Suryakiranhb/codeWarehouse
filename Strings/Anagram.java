@@ -15,7 +15,7 @@ public class Anagram {
 			System.out.println("Anagram guaranteed");
 		}
 		else {
-			System.out.println("Not anagram");
+			System.out.println("Not an anagram");
 		}
 		sc.close();
 	}
