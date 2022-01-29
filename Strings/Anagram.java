@@ -17,6 +17,7 @@ public class Anagram {
 		else {
 			System.out.println("Not anagram");
 		}
+		sc.close();
 	}
 	public static String sorter(String str) {
 		char[] a =  str.toCharArray();
