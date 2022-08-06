@@ -40,3 +40,5 @@ else:
   print("Unsorted type used")
   print("The array is not sorted: {}".format(arr))
   print("The minimum number in the array is {} and the maximum number is {}".format(min,max))
+
+  #pretty cool :)
