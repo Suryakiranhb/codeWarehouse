@@ -8,6 +8,7 @@ public class PrintLinearNum {
 			else {
 				System.out.println(start);
 				rec(start+=1, i);
+				System.out.println("Backtracking "+(start-1));
 			}
 			
 		}
