@@ -1,0 +1,31 @@
+arr = [9, 4, 7, 6, 3, 1, 5]
+Mid position is:  3
+passing to mergesort()->1. low, mid are as follows:  0 3
+Mid position is:  1
+passing to mergesort()->1. low, mid are as follows:  0 1
+Mid position is:  0
+passing to mergesort()->1. low, mid are as follows:  0 0
+baCK FROM RECURSION mergesort 1, low, mid and high are as follows:  0 0 1
+passing to mergesort()->2. low, mid are as follows:  0 0
+baCK FROM RECURSION mergesort 2, low, mid and high are as follows:  0 0 1
+baCK FROM RECURSION mergesort 1, low, mid and high are as follows:  0 1 3
+passing to mergesort()->2. low, mid are as follows:  0 1
+Mid position is:  2
+passing to mergesort()->1. low, mid are as follows:  2 2
+baCK FROM RECURSION mergesort 1, low, mid and high are as follows:  2 2 3
+passing to mergesort()->2. low, mid are as follows:  2 2
+baCK FROM RECURSION mergesort 2, low, mid and high are as follows:  2 2 3
+baCK FROM RECURSION mergesort 2, low, mid and high are as follows:  0 1 3
+baCK FROM RECURSION mergesort 1, low, mid and high are as follows:  0 3 6
+passing to mergesort()->2. low, mid are as follows:  0 3
+Mid position is:  5
+passing to mergesort()->1. low, mid are as follows:  4 5
+Mid position is:  4
+passing to mergesort()->1. low, mid are as follows:  4 4
+baCK FROM RECURSION mergesort 1, low, mid and high are as follows:  4 4 5
+passing to mergesort()->2. low, mid are as follows:  4 4
+baCK FROM RECURSION mergesort 2, low, mid and high are as follows:  4 4 5
+baCK FROM RECURSION mergesort 1, low, mid and high are as follows:  4 5 6
+passing to mergesort()->2. low, mid are as follows:  4 5
+baCK FROM RECURSION mergesort 2, low, mid and high are as follows:  4 5 6
+baCK FROM RECURSION mergesort 2, low, mid and high are as follows:  0 3 6
