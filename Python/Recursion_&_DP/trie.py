@@ -63,3 +63,7 @@ print(trie.starts_with("cb"))
 # children is a dict mapping characters → TrieNode.
 # We reuse nodes when the prefix already exists, and create new ones only when necessary.
 # At the last node of the word, we set end_of_word = True.
+
+
+#WORDSEARCH 2 implementation
+
