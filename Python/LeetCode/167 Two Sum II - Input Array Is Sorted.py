@@ -31,3 +31,7 @@ numbers = [2,7,11,15]
 target = 9
 pointer1, pointer2  = two_current_sum_2pointer(numbers, target)
 print(f"Answer is to add numbers {numbers[pointer1]} and {numbers[pointer2]}")
+
+
+# Takeaway:
+# Start at the ends, move the pointer that makes the sum closer to the target.
