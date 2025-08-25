@@ -14,10 +14,31 @@ def maxSlidingWindow(nums, k):
     return windows
 
 #solution using deque
-#def maxSlidingWindowDeque(nums, k):
+from collections import deque
+def maxSlidingWindowDeque(nums, k):
+    dq = deque()
+    res = []
+    for i in range(len(nums)):
+        # 1. removing the first deque element if its outside window scope k:
+        if dq and dq[0] <= i-k:
+            dq.popleft()
+        
+        # 2. removing all smaller elements from the back of the deque
+        while dq and nums[dq[-1]] < nums[i]:
+            dq.pop()
+
+        # 3. add the current element's index to the deque
+        dq.append(i)
+
+        # 4. If we have a full window now, we just gotta append the max to the result (we are recording the max)
+        if i >= k-1:
+            res.append(nums[dq[0]])
+
+    return res
+        
 
 
 nums = [1,3,-1,-3,5,3,6,7]
 k = 3
-ans = maxSlidingWindow(nums,k)
+ans = maxSlidingWindowDeque(nums,k)
 print("the maximum sliding windows are: ",ans)
