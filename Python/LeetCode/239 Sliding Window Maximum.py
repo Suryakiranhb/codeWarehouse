@@ -20,6 +20,7 @@ def maxSlidingWindowDeque(nums, k):
     res = []
     for i in range(len(nums)):
         # 1. removing the first deque element if its outside window scope k:
+        # note that i-k here is what's covering the window aspect of this code. 
         if dq and dq[0] <= i-k:
             dq.popleft()
         
