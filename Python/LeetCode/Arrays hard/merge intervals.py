@@ -12,12 +12,11 @@ def merge_intervals(arr):
     merged.append(arr[0])
 
     for i in range(1,len(arr)):
-        last = merged[-1]
+        last = merged[-1] # merged[-1] means last element of merged 
         print(last)
-        sys.exit()
         current = arr[i]
 
-        #overlap cheking and merging if so
+        #overlap cheking, and merging if so
         if last[1] >= current[0]:
             last[1] = max(last[1],current[1])
         else:
