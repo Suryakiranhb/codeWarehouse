@@ -17,6 +17,7 @@ works on the basis of "at each index, I count how many previous prefix XORs woul
 like, basically, we can do 'wanted number' XOR 'number we have' to get the 'number that we wannna XOR' to the 
 'number we already have' to get the 'wanted number'
 
+math:
 we 6 right? since thats K.
 lets say by doing arr[0]^arr[1] we get the XOR answer x.
 now, what do we xor to x to get K? 
@@ -32,6 +33,7 @@ def xorDict(arr, K):
     count = 0
 
     for num in arr:
+        # math part:
         prefixXor ^= num
         needed = prefixXor ^ K
 
@@ -39,6 +41,11 @@ def xorDict(arr, K):
             count += xorDict.get(needed)
 
         xorDict[prefixXor] = xorDict.get(prefixXor, 0) + 1
+        # the above line essentially means:
+        # current_count = xorDict.get(prefixXor, 0)
+        # new_count = current_count + 1
+        # xorDict[prefixXor] = new_count
+
 
     return count
 
